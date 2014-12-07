@@ -1,0 +1,8 @@
+      exists  app/models/
+      exists  test/unit/
+      exists  test/fixtures/
+      create  app/models/post.rb
+      create  test/unit/post_test.rb
+      create  test/fixtures/posts.yml
+      exists  db/migrate
+      create  db/migrate/20141207041322_create_posts.rb

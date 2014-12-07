@@ -1,0 +1,5 @@
+
+$name = 'tesco'
+$city = 'bangalore'
+
+

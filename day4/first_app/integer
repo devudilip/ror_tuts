@@ -1,0 +1,8 @@
+      exists  app/models/
+      exists  test/unit/
+      exists  test/fixtures/
+   identical  app/models/post.rb
+   identical  test/unit/post_test.rb
+   identical  test/fixtures/posts.yml
+      exists  db/migrate
+Another migration is already named create_posts: db/migrate/20141207041322_create_posts.rb

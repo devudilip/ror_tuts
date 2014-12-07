@@ -1,0 +1,7 @@
+<%= flash[:greet] %>
+
+<p>Category : <%= @post.category.category_name %> </p>
+<p>Content : <pre><%= @post.content %></pre></p>
+
+<%= link_to 'posts', posts_path %>
+

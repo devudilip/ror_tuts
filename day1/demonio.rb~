@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+print "Enter the name :"
+name = gets()
+
+print "Enter the city :"
+city = gets()
+
+$\ = "\n" 
+print "name : #{name}"
+print "city : #{city}"

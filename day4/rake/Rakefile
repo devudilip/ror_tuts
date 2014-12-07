@@ -1,0 +1,25 @@
+task :gm do
+	puts "have nice morning"
+end
+
+task :default do
+	puts "the default task"
+end
+
+task :zipme do
+	`zip -R ~/source.zip ~/day{1,2,3,4}`
+	`cp source.zip /var/www/html`
+end
+
+task :gn do
+	puts "bright noon"
+end
+
+
+task :ge do
+	puts "evening"
+end
+
+task  :showtime do
+	print `date +'%H:%M:%S'`
+end

@@ -1,0 +1,27 @@
+./script/generate  model Picture name:string imag_id:integer imag_type:string
+
+./script/generate  model  Employee name:string 
+./script/generate  model  Product name:string 
+
+rake db:migrate
+
+class Picture < ActiveRecord::Base
+	belongs_to :imag, :polymorphic => true
+end
+
+class Employee < ActiveRecord::Base
+	 has_many :pictures, :as => :imag
+end
+
+class Product < ActiveRecord::Base
+	has_many :pictures, :as => :imag
+end
+
+e = Employee.new({:name => 'pat'})
+e.save
+e.pictures.create({:name=>'pci22'})
+
+
+
+
+

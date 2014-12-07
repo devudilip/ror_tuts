@@ -1,0 +1,8 @@
+      exists  app/models/
+      exists  test/unit/
+      exists  test/fixtures/
+      create  app/models/item.rb
+      create  test/unit/item_test.rb
+      create  test/fixtures/items.yml
+      exists  db/migrate
+      create  db/migrate/20141207033440_create_items.rb
